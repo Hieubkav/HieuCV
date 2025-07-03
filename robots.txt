@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hieubkav.github.io/HieuCV/sitemap.xml
+
+# Disallow specific files
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /.gitignore

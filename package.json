@@ -1,0 +1,46 @@
+{
+  "name": "hieucv",
+  "version": "1.0.0",
+  "description": "Portfolio website của Trần Mạnh Hiếu - Laravel PHP Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . --listen 3000",
+    "build": "echo 'Static website - no build needed'",
+    "deploy": "gh-pages -d .",
+    "lint": "echo 'No linting configured'",
+    "test": "echo 'No tests configured'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hieubkav/HieuCV.git"
+  },
+  "keywords": [
+    "portfolio",
+    "cv",
+    "resume",
+    "laravel",
+    "php",
+    "developer",
+    "cyberpunk",
+    "responsive",
+    "github-pages"
+  ],
+  "author": {
+    "name": "Trần Mạnh Hiếu",
+    "email": "tranmanhhieu10@gmail.com",
+    "url": "https://github.com/Hieubkav"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hieubkav/HieuCV/issues"
+  },
+  "homepage": "https://hieubkav.github.io/HieuCV/",
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

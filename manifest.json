@@ -1,0 +1,28 @@
+{
+  "name": "Trần Mạnh Hiếu - Laravel PHP Developer",
+  "short_name": "HieuCV",
+  "description": "Portfolio website của Trần Mạnh Hiếu - Laravel PHP Developer với 2.5+ năm kinh nghiệm",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00f3ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/logo.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "cv"],
+  "lang": "vi",
+  "scope": "/",
+  "prefer_related_applications": false
+}

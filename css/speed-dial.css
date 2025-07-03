@@ -1,0 +1,153 @@
+/* Speed Dial Styles - Always Visible */
+#speed-dial {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Speed Dial Button Hover Effects */
+#speed-dial button,
+#speed-dial a {
+    position: relative;
+    overflow: hidden;
+}
+
+#speed-dial button::before,
+#speed-dial a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+#speed-dial button:hover::before,
+#speed-dial a:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+/* Tooltip Slide Animation */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Staggered Animation for Buttons */
+#speed-dial > div > div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#speed-dial > div > div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#speed-dial > div > div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Glow Effects */
+#speed-dial button,
+#speed-dial a {
+    box-shadow: 0 4px 15px rgba(0, 243, 255, 0.3);
+}
+
+#speed-dial button:hover,
+#speed-dial a:hover {
+    box-shadow: 0 6px 20px rgba(0, 243, 255, 0.5);
+}
+
+/* Phone button glow */
+a[href^="tel:"] {
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3) !important;
+}
+
+a[href^="tel:"]:hover {
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.5) !important;
+}
+
+/* Zalo button glow */
+a[href*="zalo.me"] {
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3) !important;
+}
+
+a[href*="zalo.me"]:hover {
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5) !important;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    #speed-dial {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    #speed-dial button,
+    #speed-dial a {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+
+    #speed-dial svg {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+
+    /* Hide tooltips on mobile */
+    #speed-dial span {
+        display: none;
+    }
+}
+
+/* Subtle Pulse Animation */
+@keyframes subtlePulse {
+    0% {
+        box-shadow: 0 4px 15px rgba(0, 243, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(0, 243, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(0, 243, 255, 0.3);
+    }
+}
+
+#speed-dial button:first-child {
+    animation: subtlePulse 3s infinite;
+}
+
+/* Cyberpunk Neon Border Effect */
+#speed-dial button,
+#speed-dial a {
+    border: 1px solid rgba(0, 243, 255, 0.3);
+}
+
+#speed-dial button:hover,
+#speed-dial a:hover {
+    border: 1px solid rgba(0, 243, 255, 0.6);
+}
+
+/* Tooltip Cyberpunk Style */
+#speed-dial span {
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+}
+
+/* Icon Rotation on Hover */
+#speed-dial svg {
+    transition: transform 0.3s ease;
+}
+
+#speed-dial button:hover svg,
+#speed-dial a:hover svg {
+    transform: scale(1.1);
+}
